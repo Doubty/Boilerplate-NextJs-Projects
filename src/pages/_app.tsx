@@ -4,7 +4,9 @@ import Head from 'next/head'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>Boilerplate React by Galvs - Doubty</title>
+      </Head>
       <Component {...pageProps} />
     </>
   )
