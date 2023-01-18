@@ -1,14 +1,13 @@
 import * as S from './styles'
 
-const Main = () => (
+const Main = ({
+  title = 'BoilerPlate do Galvs',
+  description = 'Next.js usando typescript e styled componentes, bem como, configurado para testes, prettier, eslint e husky.'
+}) => (
   <S.Wrapper>
     <S.Logo src="/img/logo.svg" alt="Logo do projeto - Boilerplate" />
-    <S.Title>BoilerPlate do Galvs</S.Title>
-    <S.Description>
-      Boilerplate criado com amor e dedicação total de Antônio Galvão.
-      Boilerplate conta com projeto em Next.js usando typescript e styled
-      componentes, bem como, configurado para testes, prettier, eslint e husky.
-    </S.Description>
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
     <S.Illustration
       src="/img/hero-illustration.svg"
       alt="Desenvolvedor na frente do computador"
