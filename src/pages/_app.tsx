@@ -15,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
           content="A simple project created to work with typescript, react and Styled components"
         />
       </Head>
+
       <GlobalStyle />
+
       <Component {...pageProps} />
     </>
   )
